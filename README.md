@@ -163,7 +163,7 @@ function showQueryAndResults(q, results) {
 	var resultsEl = document.querySelector('#results');
 	var html = '';
 
-	html += '<p>Deine Suchanfragey:</p>';
+	html += '<p>Deine Suchanfrage:</p>';
 	html += '<pre></pre>';
 	html += '<ul>';
 
