@@ -75,7 +75,8 @@ Lass uns sehen, was wir sonst noch machen können..
 Öffne den Unter-Tab "Anwendung" in den Entwicklertools deines Browsers. Unter "Speicher" -> "Cookies" klicke auf "localhost:3000", um die vom Browser für diese Website gespeicherten Cookies anzuzeigen.
 ![](screenshots/xss-screenshot-002.png)
 
-Beachte, dass es ein Cookie namens "connect.sid" gibt. Dies ist ein Session-Cookie, das von unserem lokalen Webserver gesetzt wird. Ist es möglich, dass wir über die XSS-Schwachstelle darauf zugreifen können? Lass es uns versuchen. Wiederhole die Schritte aus dem Abschnitt "Proof of Concept" oben, aber mit dem folgenden Code:```html
+Beachte, dass es ein Cookie namens "connect.sid" gibt. Dies ist ein Session-Cookie, das von unserem lokalen Webserver gesetzt wird. Ist es möglich, dass wir über die XSS-Schwachstelle darauf zugreifen können? Lass es uns versuchen. Wiederhole die Schritte aus dem Abschnitt "Proof of Concept" oben, aber mit dem folgenden Code:
+```html
 <img src="does-not-exist" onerror="alert(document.cookie)">
 ```
 Kodiere das obige HTML und verwende es als Suchanfrage, oder [versuche diesen Link](http://localhost:3000/?q=%3Cimg%20src%3D%22does-not-exist%22%20onerror%3D%22alert(document.cookie)%22%3E).
