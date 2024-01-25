@@ -139,7 +139,7 @@ function showQueryAndResults(q, results) {
 	var resultsEl = document.querySelector('#results');
 	var html = '';
 
-	html += '<p>Your search query:</p>';
+	html += '<p>Deine Suchanfrage:</p>';
 	html += '<pre>' + q + '</pre>';
 	html += '<ul>';
 
@@ -163,7 +163,7 @@ function showQueryAndResults(q, results) {
 	var resultsEl = document.querySelector('#results');
 	var html = '';
 
-	html += '<p>Your search query:</p>';
+	html += '<p>Deine Suchanfragey:</p>';
 	html += '<pre></pre>';
 	html += '<ul>';
 
